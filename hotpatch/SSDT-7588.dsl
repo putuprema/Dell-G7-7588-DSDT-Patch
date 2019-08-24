@@ -667,14 +667,8 @@ DefinitionBlock("", "SSDT", 2, "hack", "7588", 0)
         Return (Ones != Match(Local0, MEQ, Arg0, MTR, 0, 0))
     }
 
-    // SSDT patches for I2C touchpad with Voodoo I2C in GPIO interrupt (disabled by default)
+    // SSDT patches for I2C touchpad with Voodoo I2C in GPIO interrupt
     //
-    // WARNING: As of 06-04-2019, GPIO interrupt mode on Coffee Lake is not supported. 
-    // Don't uncomment the lines of code below until Coffee Lake support arrives.
-    // You can still use VoodooI2C in Polling mode, though it slightly increases 
-    // cpu usage.
-    //
-    /*
     External (_SB_.PCI0.GPI0, DeviceObj)    
     External (_SB_.PCI0.I2C1.TPD1, DeviceObj)  
     External (_SB_.PCI0.I2C1.TPD1.SBFB, IntObj)
@@ -695,5 +689,4 @@ DefinitionBlock("", "SSDT", 2, "hack", "7588", 0)
             Return (ConcatenateResTemplate (SBFB, SBFG))
         }
     }
-    */
 }
