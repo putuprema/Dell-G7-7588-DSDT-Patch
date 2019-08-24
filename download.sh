@@ -30,7 +30,7 @@ download_acidanthera AppleALC acidanthera-AppleALC
 download_acidanthera VirtualSMC acidanthera-VirtualSMC
 download_acidanthera CPUFriend acidanthera-CPUFriend
 download_latest_notbitbucket "https://github.com" "https://github.com/Mieze/AtherosE2200Ethernet/releases" "AtherosE2200Ethernet-V" "Mieze-AtherosE2200Ethernet.zip"
-download_latest_notbitbucket "https://github.com" "https://github.com/alexandred/VoodooI2C/releases" "VoodooI2C-v" "alexandred-VoodooI2C.zip"
+download_latest_notbitbucket "https://github.com" "https://github.com/alexandred/VoodooI2C/releases" "VoodooI2C-" "alexandred-VoodooI2C.zip"
 cd ..
 
 # download tools
